@@ -46,3 +46,23 @@ let alphabetRegex = /[a-z]/gi; // Searches within the entire range specified wit
 let result9 = quoteSample2.match(alphabetRegex);
 
 // Match Numbers and Letters of the Alphabet
+let quoteSample3 = document.getElementById('output-10').innerHTML;
+let myRegex2 = /[h-s2-6]/gi; // You can combine a search for a range of letters and numbers like this.
+let result10 = quoteSample3.match(myRegex2);
+
+// Match Single Characters Not Specified
+let quoteSample4 = document.getElementById('output-11').innerHTML;
+let myRegex3 = /[^0-9aeiou]/gi; // The ^ symbol (carat symbol) excludes the items that come after it.
+let result11 = quoteSample4.match(myRegex3);
+
+// Match Characters that Occur One or More Times
+let difficultSpelling = document.getElementById('output-12').innerHTML;
+let myRegex4 = /s+/gi; // Returns matches of item that appears one or more times in a row (Mississippi returns "ss", "ss")
+let result12 = difficultSpelling.match(myRegex4);
+
+// Match Characters that Occur Zero or More Times
+let chewieQuote = document.getElementById('output-13').innerHTML;
+let chewieRegex = /Aa*/; // Asterisk * finds characters appearing 0 or more times
+let result13 = chewieQuote.match(chewieRegex);
+
+// Find Characters with Lazy Matching
